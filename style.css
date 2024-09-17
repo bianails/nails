@@ -1,0 +1,209 @@
+:root {
+    --primary-color: #ff6f00ff;
+    --secondary-color: #803300ff;
+    --black-color: #000000ff;
+    --white-color: #ffffffff;
+    --whatsapp-color: #008069;
+    --price-color: rgb(83, 33, 0);
+    --footer-color: rgb(45, 45, 45);
+}
+
+/* @link https://utopia.fyi/type/calculator?c=640,18,1.2,1440,24,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--2: clamp(0.7813rem, 0.7309rem + 0.1258vw, 0.8442rem);
+    --step--1: clamp(0.9375rem, 0.7873rem + 0.3756vw, 1.1253rem);
+    --step-0: clamp(1.125rem, 0.825rem + 0.75vw, 1.5rem);
+    --step-1: clamp(1.35rem, 0.8304rem + 1.299vw, 1.9995rem);
+    --step-2: clamp(1.62rem, 0.7837rem + 2.0907vw, 2.6653rem);
+    --step-3: clamp(1.944rem, 0.6569rem + 3.2178vw, 3.5529rem);
+    --step-4: clamp(2.3328rem, 0.4102rem + 4.8064vw, 4.736rem);
+    --step-5: clamp(2.7994rem, -0.0116rem + 7.0275vw, 6.3131rem);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-color: var(--secondary-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero__image {
+    width: 80vw;
+    height: 80vh;
+}
+
+.hero__logo {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--price-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: var(--whatsapp-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--step-1);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__logo {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--price-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.price-list__title {
+    font-size: var(--step-3);
+    font-weight: bold;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+.price-list__image {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-list__image img {
+    max-width: 100%;
+}
+
+.price-list__descripition {
+    padding: 10px;
+    font-size: var(--step-0);
+    color: var(--white-color);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__header {
+    font-size: var(--step-2);
+    font-weight: bold;
+    text-align: start;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+.table__row {
+    font-size: 1.5em;
+}
+
+.table__data {
+    padding: 10px;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--primary-color);
+    width: 50%;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-color);
+    color: var(--white-color);
+    padding: 20px;
+}
+
+.footer__map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__endress {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.footer__endress p {
+    padding: 10px;
+    font-size: var(--step-0);
+}
+
+.endress__title {
+    padding: 10px;
+    font-size: var(--step-1);
+}
+
+.footer__contact p {
+    padding: 10px;
+    font-size: var(--step-0);
+}
+
+.contact__title {
+    padding: 10px;
+    font-size: var(--step-1);
+}
+
+.social__title {
+    padding: 10px;
+    font-size: var(--step-1);
+}
+
+.social__icons {
+    padding: 10px;
+    color: var(--white-color);
+}
+
+
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom p {
+    font-size: var(--step--1);
+    padding: 10px;
+}
